@@ -18,8 +18,13 @@ const presidents = [
 const republican = presidents.filter((presidents) => (presidents.party = "R"));
 
 console.table(republican);
-//2)Filter all presidents to leave only one term Republican presidents HINT use If statement
 
+//2)Filter all presidents to leave only one term Republican presidents HINT use If statement
+const Rterm = presidents.filter(
+  (presidents) => (presidents.party = "R" && presidents.terms == 1)
+);
+
+console.table(Rterm);
 //3) return only the last three presidents
 
 //4) log all dems who served 2 terms. HINT use chain filter, filter and slice
